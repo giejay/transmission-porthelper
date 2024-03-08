@@ -11,7 +11,7 @@ do
 
 	if [ $OLDPORT -ne $PORT ]; then
 		echo "Setting Transmission port to ($PORT)."
-		transmission-remote -n $USER:$PASS -p $PORT
+		transmission-remote vpn2 -n $USER:$PASS -p $PORT
 		OLDPORT=$PORT
 	fi
 
